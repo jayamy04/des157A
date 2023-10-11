@@ -69,7 +69,6 @@ body div:hover .amy {
 
 @font-face {
     font-family: myFirstFont;
-    size-adjust: 200%;
     src: url("fonts/fontspring-demo-fieldsdisplay-bold.otf");
     /* font-size: 1000px; */
 }
