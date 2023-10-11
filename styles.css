@@ -1,0 +1,80 @@
+body {
+    background-image: url("images/portalBackground.png");
+    text-align: center;
+    max-width: 1200px;
+    min-width: 800px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} 
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+body main {
+    display: flex;
+    justify-content: space-around;
+    /* margin: auto;
+    max-width: 1200px;
+    min-width:800px;  */
+}
+
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 200%;
+}
+
+body main section li {
+    font-family: 'IBM Plex Mono', monospace;
+    /* text-decoration: none !important; */
+    list-style-type: none;
+    font-size: 130%;
+}
+
+.column {
+    flex:1;
+}
+
+#banner {
+    width: 1100px;
+    height:100px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+body div:hover .amy {
+    animation: fadeIn 1s forwards;
+}
+
+.amy {
+    animation: fadeOut 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+ 
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+@font-face {
+    font-family: myFirstFont;
+    size-adjust: 200%;
+    src: url("fonts/fontspring-demo-fieldsdisplay-bold.otf");
+    /* font-size: 1000px; */
+}
+
+h1 {
+    padding: 10px;
+    font-family: myFirstFont;
+}
