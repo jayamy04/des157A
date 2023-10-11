@@ -1,3 +1,9 @@
+h1 {
+    padding: 10px;
+    font-family: myFirstFont;
+    font-size: 3em !important;
+}
+
 body {
     background-image: url("images/portalBackground.png");
     text-align: center;
@@ -71,9 +77,4 @@ body div:hover .amy {
     font-family: myFirstFont;
     src: url("fonts/fontspring-demo-fieldsdisplay-bold.otf");
     /* font-size: 1000px; */
-}
-
-h1 {
-    padding: 10px;
-    font-family: myFirstFont;
 }
