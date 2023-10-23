@@ -14,6 +14,10 @@ body {
     animation-fill-mode: forwards;
 } 
 
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -33,7 +37,7 @@ body main {
 
 h2 {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 200%;
+    font-weight: 500;
 }
 
 body main section li {
@@ -78,3 +82,7 @@ body div:hover .amy {
     src: url("fonts/fontspring-demo-fieldsdisplay-bold.otf");
     /* font-size: 1000px; */
 }
+
+a:link{
+    text-decoration: none!important;
+  }
