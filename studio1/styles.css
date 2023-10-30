@@ -139,7 +139,10 @@ input[type=text] {
     font-family: SystemFont;
 }
 
-
+label {
+  color: #4CAF50;
+  font-family: SystemFont;
+}
 
 @font-face {
     font-family: Futura;
