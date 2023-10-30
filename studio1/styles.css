@@ -1,0 +1,159 @@
+body {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* span {
+    position: relative;
+} */
+
+div {
+    /* flex-direction: column; */
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    /* align-items: center;
+    flex-flow: no-wrap; */
+    /* flex: 1 1 0px; */
+    justify-content: space-around;
+}
+
+h1 {
+    color: #4CAF50;
+    font-family: Futura;
+}
+
+h2 {
+    color: #4CAF50;
+    font-family: SystemFont;
+}
+
+.StartTitle {
+    text-align: center;
+}
+
+#StartBtn, #submit {
+    flex: 1;
+    /* display: flex; */
+    border-style: solid;
+    border: 5px solid #4CAF50;
+    background-color: white;
+    color: #4CAF50;
+    padding: 15px 32px;
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 75px;
+    font-family: Futura;
+    border-radius: 10px;
+
+    /* sizing */
+    width: auto;
+    height: auto;
+}
+
+#StartBtn, #submit:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+img {
+    width: auto;
+    height: auto;
+    /* display: flex; */
+}
+
+/* .imageContainer {
+    position: relative;
+} */
+
+#NameCow {
+  position: relative;
+  animation: MooMove 10s linear infinite, changeMoo 1s linear infinite;
+}
+
+#VerbCow {
+    position: relative;
+    animation: changeMoo2 1s linear infinite;
+}
+
+#NumberCow {
+    position: relative;
+    animation: changeMoo3 3s linear infinite;
+}
+
+input[type=text] {
+    border: 2px solid #4CAF50;
+    padding: 12px 70px;
+    border-radius: 4px;
+}
+
+
+@keyframes MooMove {
+    0% {
+      transform: translateX(260%);
+    }
+    100% {
+      transform: translateX(-260%); 
+    }
+  }
+
+@keyframes changeMoo {
+    0%, 100% {
+      content: url("images/WalkingCow1.png");
+    }
+    50% {
+      content: url("images/SkippingCow.png");
+    }
+  }
+
+@keyframes changeMoo2 {
+    0%, 100% {
+      content: url("images/HeartCow.png");
+    }
+    50% {
+      content: url("images/HeartCow2.png");
+    }
+}  
+
+@keyframes changeMoo3 {
+    0%, 100% {
+      content: url("images/SleepyCow.png");
+    }
+    50% {
+      content: url("images/SleepyCowSpeech.png");
+    }
+} 
+
+#madlib {
+    background-color: #4EB7C1;
+    margin: 30px;
+    padding: 90px;
+    border-radius: 50px;
+    color: white;
+    line-height: 150%;
+    font-family: SystemFont;
+}
+
+
+
+@font-face {
+    font-family: Futura;
+    src: url("fonts/FuturaStd-Medium.eot");
+}
+
+@font-face {
+    font-family: SystemFont;
+    src: url("../fonts/system-font-italic.otf");
+}
+
+/* input[type="text"]:focus {
+    border:1px solid #D6D9DC;
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+

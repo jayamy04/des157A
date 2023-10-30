@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>UC Davis MadLib</title>
+</head>
+<body>
+        <div>
+            <!-- <span>1</span>
+            <span>2</span>
+            <span>3</span> -->
+            <span class="StartTitle">
+                <h1>Madlib</h1> 
+                <h2>A New Place at UC Davis</h2>
+            </span>
+            <span>
+                <img src="images/MadCowBigger.png" alt="Cow" id="StartCow">
+                <img style="display: none" src="images/HeartCow.png" alt="Cow" id="PlaceCow">
+                <!-- <div class="imageContainer"> -->
+                    <img style="display: none" src="images/WalkingCow1.png" alt="Cow" id="NameCow">
+                <!-- </div> -->
+                <img style="display: none" src="images/HeartCow.png" alt="Cow" id="VerbCow">
+                <img style="display: none" src="images/SleepyCow.png" alt="Cow" id="NumberCow">
+                <img style="display: none" src="images/MadCowBigger.png" alt="Cow" id="EndCow">
+            </span>
+            <span>
+                <button type="button" id="StartBtn">Start</button>
+
+                <form id="myform">
+                    <label for="place" style="display: none" id="placeLabel">
+                        <h2>Enter a Place & Press Enter!</h2>
+                    </label>
+                    <input style="display: none" type="text" id="place" required>
+        
+                    <label for="name" hidden>
+                        <h2>Enter a Name & Press Enter!</h2>
+                    </label>
+                    <input style="display: none" type="text" id="name" required>
+        
+                    <label for="adj" hidden>
+                        <h2>Enter an Adjective & Press Enter!</h2>
+                    </label>
+                    <input style="display: none" type="text" id="adj" required>
+        
+                    <label for="verb" hidden>
+                        <h2>Enter a Verb & Press Enter!</h2>
+                    </label>
+                    <input style="display: none" type="text" id="verb" required>
+
+                    <label for="number" hidden>
+                        <h2>Enter a Number & Press Enter!</h2>
+                    </label>
+                    <input style="display: none" type="text" id="number" required>
+        
+                </form>
+                <input style="display: none" type="submit" value="Send" id = "submit">
+                <article style="display: none" id="madlib"></article>
+
+            </span>
+        </div>
+</body>
+</html>
