@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+
+}
+
+
+/* figure .bike { */
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto;
+} */
+
+figcaption {
+    color: white;
+    /* display: block; */
+}
+
+/* figure { */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; */
+/* } */
+
+.bike {
+    height: 500px;
+}
+
+
+
+/* body {
+    background-image: url("images/Bike.png");
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+  /* } */
