@@ -1,14 +1,19 @@
 body {
     background-color: black;
-
     min-height: 100vh;
-    display: flex;
+    width: 1920px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-div {
+.line1 {
+    font-size:0;
+    display:block;
+}
 
+.line {
+    display: block;
 }
 
 
@@ -18,11 +23,6 @@ div {
     margin-right: auto;
 } */
 
-figcaption {
-    color: white;
-    /* display: block; */
-}
-
 /* figure { */
     /* display: flex;
     justify-content: center;
@@ -31,10 +31,26 @@ figcaption {
 /* } */
 
 .bike {
+    width: 963px;
+    height: 717px;
+    display: inline;
+    float:left;
+}
+
+.donut {
+    display: inline;
+    float:left;
+    width: 957px;
     height: 500px;
 }
 
-
+.pink {
+    display: inline;
+    float:left;
+    width: 389px;
+    height: 872px;
+    margin-left: 0;
+}
 
 /* body {
     background-image: url("images/Bike.png");
