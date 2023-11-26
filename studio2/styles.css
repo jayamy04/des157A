@@ -1,59 +1,259 @@
 body {
-    background-color: black;
-    min-height: 100vh;
-    width: 1920px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.line1 {
-    font-size:0;
-    display:block;
-}
-
-.line {
+header {
+    text-align: center;
+    background-color: #4A7AB8;
+    padding: 5px;
+    color: white;
     display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1
 }
 
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1vw;
+    margin-top: 3px;
+    color: #294365;
+}
 
-/* figure .bike { */
-    /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto;
-} */
+h1 {
+    font-size: 2vw !important;
+    font-family: myFirstFont;
+    display: inline;
+    color: #294365;
+}
 
-/* figure { */
-    /* display: flex;
-    justify-content: center;
+.hangangHeader, .foodHeader, .catHeader {
+    font-size: 3.8vw !important;
+    font-family: myFirstFont;
+    /* display: inline; */
+    color: #E8E8E8;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-container1:hover .hangangHeader {
+    color: #294365;
+    font-style: italic;
+}
+
+/* https://css-tricks.com/css-link-hover-effects/ */
+
+.hangangHeader, .foodHeader, .catHeader{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px; /* Adjust as needed to control the distance between text and underline */
+}
+
+.hangangHeader::before {
+    content: '';
+    background: #294365;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.foodHeader::before {
+    content: '';
+    background: #F1BA76;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.catHeader::before {
+    content: '';
+    background: #61462B;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.image-container1:hover .hangangHeader {
+    background-position: 0;
+}
+
+.image-container1:hover .hangangHeader::before {
+    width: 100%;
+}
+
+.image-container2:hover .foodHeader {
+    background-position: 0;
+}
+
+.image-container2:hover .foodHeader::before {
+    width: 100%;
+}
+
+.image-container3:hover .catHeader {
+    background-position: 0;
+}
+
+.image-container3:hover .catHeader::before {
+    width: 100%;
+}
+
+.image-container2:hover .foodHeader {
+    color: #F1BA76;
+    font-style: italic;
+}
+
+.image-container3:hover .catHeader {
+    color: #61462B;
+    font-style: italic;
+}
+
+.image-container1, .image-container2, .image-container3{
+    display: flex;
     align-items: center;
-    height: 100%; */
-/* } */
-
-.bike {
-    width: 963px;
-    height: 717px;
-    display: inline;
-    float:left;
+    margin-bottom: 0px;
+    opacity: 1;
 }
 
-.donut {
-    display: inline;
-    float:left;
-    width: 957px;
-    height: 500px;
+.image-container1 img, .image-container2 img, .image-container3 img {
+    height: auto; 
+    margin-right: 50px; 
+    opacity: 0.1;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    max-width: 100%; 
+    width: 50vw;
 }
 
-.pink {
-    display: inline;
-    float:left;
-    width: 389px;
-    height: 872px;
-    margin-left: 0;
+.image-container1:hover img,
+.image-container2:hover img,
+.image-container3:hover img {
+    opacity: 1;
 }
 
-/* body {
-    background-image: url("images/Bike.png");
-    background-repeat: no-repeat; */
-    /* background-position: center; */
-  /* } */
+footer {
+    padding: 20px;
+    background-color: #4A7AB8;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay1, #overlay2, #overlay3 {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay1 article, #overlay2 article, #overlay3 article{
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article {
+    width: 25vw;
+    height: 35vw;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card.rotate .front{
+    transform: rotateY(0deg);
+}
+
+.card.rotate .back {
+    transform: rotateY(180deg);
+}
+
+.card .back, .card .front {
+   backface-visibility: hidden;
+   border-radius: 10px;
+   transition: 1s;
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   display: flex;
+  justify-content: center;
+}
+
+.front {
+	transform: rotateY(-180deg);	
+}
+
+#Front1 {
+    /* border: 1px solid #294365; */
+    width: 35vw;
+    height: 38vw;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+ }
+
+ #Back1{ 
+    display: block;
+    /* border: 1px solid #294365; */
+    width: 35vw;
+    height: 38vw;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+ }
+
+ #cancel1 {
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 5vw;
+ }
+
+ #shuffle1, #shuffle2, #shuffle3 {
+    position: absolute; 
+    margin-top: 25%;
+    margin-left: 70%;
+    width: 5.5vw;
+ }
+
+ #turn1 {
+    position: absolute;
+    font-size: 3vw !important;
+    font-family: myFirstFont;
+    font-weight: bold;
+    display: inline;
+    margin-top: 26.2%;
+    margin-left: 78%;
+    font-size: 100%;
+    color: white;
+    font-style: italic;
+ }
