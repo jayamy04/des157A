@@ -213,7 +213,7 @@ article {
 	transform: rotateY(-180deg);	
 }
 
-#Front1 {
+#Front1, #Front2, #Front3{
     /* border: 1px solid #294365; */
     width: 35vw;
     height: 38vw;
@@ -222,7 +222,7 @@ article {
     object-fit: cover;
  }
 
- #Back1{ 
+ #Back1, #Back2, #Back3{ 
     display: block;
     /* border: 1px solid #294365; */
     width: 35vw;
@@ -245,7 +245,7 @@ article {
     width: 5.5vw;
  }
 
- #turn1 {
+ #turn1, #turn2, #turn3 {
     position: absolute;
     font-size: 3vw !important;
     font-family: myFirstFont;
