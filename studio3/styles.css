@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-image: url('images/cover.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set a minimum height for the body */
+}
+
+#startgame {
+    margin-left: 40%;
+    margin-top: 14%;
+}
+
+#quit {
+    margin-top: 3%;
+    margin-left: 81%;
+}
+
+#game {
+ font-family: zcool;
+ font-size: 350%;
+ margin-left: 45%;
+
+}
+
+#roll {
+    margin-left: 48%;
+    margin-top: 0%;
+}
+
+@font-face {
+    font-family: zcool;
+    src: url(fonts/ZCOOLQingKeHuangYou-Regular.ttf);
+}
