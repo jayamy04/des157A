@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-image: url('images/cover.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set a minimum height for the body */
+    background-color: #262442;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+#whatPlayer {
+    margin-left: 45%;
+    font-family: Futura;
+}
+
+#importantMessage {
+    font-size: 61%;
+    margin-left: 28%;
+}
+
+#number1 {
+    margin-left: 34%;
+    margin-top: 14%;
+    font-size: 450%;
+    color: #262442;
+}
+
+#n1 {
+    display: inline;
+}
+
+#n2 {
+    display: inline;
+    margin-left: 34%;
+}
+
+#playerData {
+    margin-left: 49%;
+    color: white;
+}
+
+#rollagain, #pass {
+    background-color: #DFA000; 
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#actions {
+    margin-left: 45%;
+    margin-top: 13%;
+}
+
+
+#roll {
+    background-color: #DFA000; 
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    margin: 0!important;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#startgame {
+    background-color: #FF8CF3; 
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 35%;
+    margin-top: 13%;
+}
+
+#quit {
+    /* margin: 0 !important; */
+    background-color: #DFA000; 
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 81%;
+}
+
+#game {
+    font-size: 350%;
+    /* margin-left: 45%; */
+}
+
+#actions {
+    margin-top: 3%;
+}
+
+#roll {
+    margin-left: 48%;
+    margin-top: 0%;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("fonts/FuturaStd-Medium.eot");
+}
