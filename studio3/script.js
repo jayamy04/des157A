@@ -6,10 +6,9 @@
     const gameControl = document.querySelector('#gamecontrol');
     const game = document.querySelector('#game');
     const number1 = document.querySelector('#number1');
-    const number2 = document.querySelector('#number2');
     const score = document.querySelector('#score');
-    const actionArea = document.querySelector('#actions');
-
+    const actionArea = document.querySelector('#actions'); 
+                        
     const gameData = {
 	dice: ['1', '2', '3', '4', '5', '6'],
 	players: ['player 1', 'player 2'],
@@ -20,27 +19,6 @@
 	index: 0,
 	gameEnd: 29
     };
-
-    //This gets the current player: 
-    // gameData.players[gameData.index]
-
-    // //This gets the first die and the second die: 
-    // gameData.dice[gameData.roll1-1]
-    // gameData.dice[gameData.roll2-1]
-
-    // //This gets the score of the current player: 
-    // gameData.score[gameData.index]
-
-    // //This gets the index, or turn
-    // gameData.index
-
-    // //This gets the individual dice values and the added dice value
-    // gameData.roll1
-    // gameData.roll2
-    // gameData.rollSum
-
-    // //This gets the winning threshold
-    // gameData.rollSum
 
     startGame.addEventListener('click', function() {
         // random set of game index
